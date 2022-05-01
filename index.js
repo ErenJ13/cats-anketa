@@ -16,17 +16,18 @@ function cats() {
     let manname = document.getElementById('name').value;
     let manphone = document.getElementById('phone').value;
     let manadress = document.getElementById('adress').value;
-    let catbreed = document.querySelector('input[class="poroda"]:checked').value;
+    let catbreed = document.querySelector('.poroda').value;
     let catfood = document.querySelector('input[class="food"]:checked').value;
     let catsex = document.querySelector('input[class="sex"]:checked').value;
 
+  
     let cat = new Cat(catname, manname, manphone, manadress, catbreed, catfood, catsex);
 
     console.log(cat.petname);
     console.log(cat.name);
     console.log(cat.phone);
     console.log(cat.adress);
-    console.log(cat.poroda);
+    console.log(cat.breed);
     console.log(cat.food);
     console.log(cat.sex);
 }
